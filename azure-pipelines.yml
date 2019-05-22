@@ -39,7 +39,6 @@ stages:
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
-        hidePII: true
         tags: |
           $(tag)
           
