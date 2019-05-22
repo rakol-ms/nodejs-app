@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: rakolmsnodejsapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rakolmsnodejsapp 
+    spec:
+      containers:
+        - name: rakolmsnodejsapp 
+          image: rakolacr.azurecr.io/rakolmsnodejsapp 
+          ports:
+          - containerPort: 8080
