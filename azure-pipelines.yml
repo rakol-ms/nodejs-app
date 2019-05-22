@@ -38,7 +38,6 @@ stages:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        hidePII: true
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
